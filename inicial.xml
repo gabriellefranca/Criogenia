@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gabi2.criogenia.Inicial"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="O que é criogenia?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageinicio"
+                android:textColor="#212121"
+                android:fontFamily="bold"
+                android:textSize="23sp"
+                android:layout_alignLeft="@+id/inicio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="0.06" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/imageView3"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/crio"
+                android:layout_weight="0.06" />
+
+            <TextView
+                android:text="Produção de baixas temperaturas que permitem, entre varias outras coisas, a hibernação dos seres vivos por muito tempo."
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageinicio2"
+                android:textColor="#212121"
+                android:fontFamily="bold"
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/inicio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp" />
+
+            <TextView
+                android:text="Como funciona?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageinicio1"
+                android:textColor="#212121"
+                android:fontFamily="bold"
+                android:textSize="23sp"
+                android:layout_alignLeft="@+id/inicio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="0.06" />
+
+            <ImageView
+                android:layout_width="341dp"
+                android:layout_height="170dp"
+                android:id="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/crio1" />
+
+            <TextView
+                android:text="Você morre e os médicos o colocam num tanque de nitrogênio líquido, guardado a -196 ºC, temperatura em que o cadáver não apodrece. Aí, daqui a uns 500 anos, os cientistas descobrem um jeito de combater a doença que causou sua morte e o degelam."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:textColor="#212121"
+                android:fontFamily="bold"
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/inicio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="0.06" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

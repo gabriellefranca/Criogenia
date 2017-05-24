@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/img"
+    tools:context="com.example.gabi2.criogenia.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:alpha="0.8" >
+
+    <TextView
+        android:text="Faça seu login para utilizar nosso aplicativo!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageinicio"
+        android:textColor="#000"
+        android:fontFamily="bold"
+        android:textSize="12sp"
+        android:alpha="0.9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="90dp"
+        />
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:id="@+id/editTextUsername"
+        android:hint="Usuario"
+        android:textColor="#fff"
+        android:alpha="0.9"
+        android:background="@color/colorPrimaryDark"
+        android:radius="5dp"
+        android:textColorHint="#FFFFFF"
+        android:paddingLeft="20dp"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:id="@+id/editTextPassword"
+        android:hint="Senha"
+        android:textColor="#fff"
+        android:layout_marginLeft="70dp"
+        android:alpha="0.9"
+        android:inputType="textPassword"
+        android:background="@color/colorPrimaryDark"
+        android:textColorHint="#FFFFFF"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/buttonLogin"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:alpha="1.0"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="bold"/>
+
+    <TextView
+        android:text="©2017-Projeto Acadêmico- Todo conteúdo é fictício."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messagefim"
+        android:textColor="#000"
+        android:fontFamily="bold"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="90dp"
+        />
+
+
+
+
+
+</LinearLayout>
