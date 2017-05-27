@@ -1,0 +1,25 @@
+<?php 
+ if($_SERVER['REQUEST_METHOD']=='POST'){
+ 
+ $id = $_POST['id'];
+ include "Banco/conexao.php";
+ 
+
+				$sql = "SELECT * FROM Usuarios_tb WHERE id_usuario='$id'";
+				$conferir = $conex -> prepare($sql);
+				$conferir ->  execute();
+				foreach($conferir as $bolacha){
+					$usuario = $bolacha['usuario'];
+					$nome=$bolacha['nome'];
+					$sobrenome=$bolacha['sobrenome'];
+					$telefone=$bolacha['telefone'];
+					$email=$bolacha['email'];
+					$cpf = $bolacha['cpf'];
+					$rg = $bolacha['rg'];
+					$perfil = $bolacha['perfil'];
+				}
+				echo "".$nome.";".$email.";".$sobrenome.";".$telefone.";".$perfil."";
+				
+				$conferir = null;
+ }
+?>
