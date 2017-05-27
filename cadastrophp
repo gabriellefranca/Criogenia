@@ -1,0 +1,27 @@
+<?php 
+ if($_SERVER['REQUEST_METHOD']=='POST'){
+ 
+ $id = "";
+ $usuario =$_POST['usuario'];
+ $senha = $_POST['senha'];
+ $nome = $_POST['nome'];
+ $sobrenome = $_POST['sobrenome'];
+ $telefone = $_POST['telefone'];
+ $email = $_POST['email'];
+ $cpf = $_POST['cpf'];
+ $rg = $_POST['rg'];
+ $perfil = 2;
+
+ include "Banco/Conexao.php";
+ 
+
+				$sql = "INSERT INTO Usuarios_tb VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+				$contatos = $conexao -> prepare($sql);
+				if($contatos -> execute(array($id,$usuario, $senha, $nome, $sobrenome, $telefone, $email,$cpf,$rg, $perfil))){
+					echo "Cadastro efetuado";
+				}else{
+					echo "Algo deu errado...";
+				}						
+				$contatos = null;
+ }
+?>
